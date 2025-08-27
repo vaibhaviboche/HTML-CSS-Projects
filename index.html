@@ -10,6 +10,9 @@
       background: #f0f2f5;
       margin: 0;
       padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     header {
       background: #007acc;
@@ -26,9 +29,16 @@
       font-size: 1.1rem;
     }
     main {
-      max-width: 900px;
+      flex: 1;
+      max-width: 1000px;
       margin: 30px auto;
       padding: 0 20px;
+    }
+    h2 {
+      color: #333;
+      margin-top: 30px;
+      border-left: 5px solid #007acc;
+      padding-left: 10px;
     }
     ul {
       list-style: none;
@@ -36,6 +46,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 15px;
+      margin-top: 15px;
     }
     li {
       background: white;
@@ -58,6 +69,20 @@
     a:hover {
       color: #005f99;
     }
+    footer {
+      background: #222;
+      color: #bbb;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -67,43 +92,70 @@
   </header>
 
   <main>
+    <h2>📑 Layout & Content</h2>
     <ul>
       <li><a href="balancesheet.html">Balance Sheet</a></li>
-      <li><a href="build-a-book-catalog-table.html">Book Catalog Table</a></li>
-      <li><a href="build-a-book-inventory-app.html">Book Inventory App</a></li>
+      <li><a href="build-a-newspaper-article.html">Newspaper Article</a></li>
+      <li><a href="magzine.html">Magazine</a></li>
+      <li><a href="design-a-magazine-layout.html">Magazine Layout</a></li>
+      <li><a href="city skyline.html">City Skyline</a></li>
+      <li><a href="set-of-colored-boxes.html">Set of Colored Boxes</a></li>
+    </ul>
+
+    <h2>📝 Forms & Pages</h2>
+    <ul>
+      <li><a href="build-a-survey-form.html">Survey Form</a></li>
+      <li><a href="design-a-contact-form.html">Contact Form</a></li>
+      <li><a href="lab-job-application-form.html">Job Application Form</a></li>
       <li><a href="build-a-checkout-page.html">Checkout Page</a></li>
       <li><a href="build-a-confidential-email-page.html">Confidential Email Page</a></li>
-      <li><a href="build-a-house-painting.html">House Painting</a></li>
-      <li><a href="build-a-moon-orbit.html">Moon Orbit</a></li>
-      <li><a href="build-an-availability-table.html">Availability Table</a></li>
-      <li><a href="build-an-event-flyer-page.html">Event Flyer</a></li>
-      <li><a href="build-a-newspaper-article.html">Newspaper Article</a></li>
-      <li><a href="build-a-page-of-playing-cards.html">Playing Cards</a></li>
-      <li><a href="build-a-personal-portfolio.html">Personal Portfolio</a></li>
-      <li><a href="build-a-product-landing-page.html">Product Landing Page</a></li>
+      <li><a href="design-a-business-card.html">Business Card</a></li>
+      <li><a href="lab-event-hub.html">Event Hub</a></li>
+    </ul>
+
+    <h2>🎨 Design & UI Components</h2>
+    <ul>
       <li><a href="build-a-stylized-to-do-list.html">Stylized To-Do List</a></li>
-      <li><a href="build-a-survey-form.html">Survey Form</a></li>
+      <li><a href="build-a-product-landing-page.html">Product Landing Page</a></li>
+      <li><a href="build-a-personal-portfolio.html">Personal Portfolio</a></li>
+      <li><a href="lab-blog-post-card.html">Blog Post Card</a></li>
+      <li><a href="lab-multimedia-player.html">Multimedia Player</a></li>
+      <li><a href="build-an-event-flyer-page.html">Event Flyer</a></li>
+    </ul>
+
+    <h2>📊 Tables & Data</h2>
+    <ul>
+      <li><a href="build-a-book-catalog-table.html">Book Catalog Table</a></li>
+      <li><a href="build-a-book-inventory-app.html">Book Inventory App</a></li>
+      <li><a href="build-an-availability-table.html">Availability Table</a></li>
+      <li><a href="nutrition.html">Nutrition Page</a></li>
+    </ul>
+
+    <h2>📚 Documentation & Articles</h2>
+    <ul>
       <li><a href="build-a-technical-documentation-page.html">Technical Documentation</a></li>
       <li><a href="build-a-tribute-page.html">Tribute Page</a></li>
       <li><a href="build-a-video-compilation-page.html">Video Compilation Page</a></li>
+      <li><a href="design-a-movie-review-page.html">Movie Review Page</a></li>
+    </ul>
+
+    <h2>🎮 Fun & Creative</h2>
+    <ul>
       <li><a href="cat.html">Cat</a></li>
       <li><a href="catpainting.html">Cat Painting</a></li>
-      <li><a href="city skyline.html">City Skyline</a></li>
-      <li><a href="design-a-business-card.html">Business Card</a></li>
-      <li><a href="design-a-contact-form.html">Contact Form</a></li>
-      <li><a href="design-a-magazine-layout.html">Magazine Layout</a></li>
-      <li><a href="design-a-movie-review-page.html">Movie Review Page</a></li>
-      <li><a href="flappypenguin.html">Flappy Penguin</a></li>
-      <li><a href="lab-blog-post-card.html">Blog Post Card</a></li>
-      <li><a href="lab-event-hub.html">Event Hub</a></li>
-      <li><a href="lab-job-application-form.html">Job Application Form</a></li>
-      <li><a href="lab-multimedia-player.html">Multimedia Player</a></li>
-      <li><a href="magzine.html">Magazine</a></li>
-      <li><a href="nutrition.html">Nutrition Page</a></li>
+      <li><a href="build-a-house-painting.html">House Painting</a></li>
+      <li><a href="build-a-moon-orbit.html">Moon Orbit</a></li>
+      <li><a href="build-a-page-of-playing-cards.html">Playing Cards</a></li>
       <li><a href="piano.html">Piano</a></li>
+      <li><a href="flappypenguin.html">Flappy Penguin</a></li>
       <li><a href="quiz webpage.html">Quiz Webpage</a></li>
-      <li><a href="set-of-colored-boxes.html">Set of Colored Boxes</a></li>
     </ul>
   </main>
+
+  <footer>
+    © 2025 <strong>Vaibhavi Boche</strong> · Built with 💙 using 
+    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML</a> & 
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS</a>
+  </footer>
 </body>
 </html>
