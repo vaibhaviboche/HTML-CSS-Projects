@@ -3,33 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HTML & CSS Projects</title>
+  <title>My HTML & CSS Projects</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      padding: 30px;
+      background: #f0f2f5;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
+    header {
+      background: #007acc;
+      color: white;
+      padding: 20px;
       text-align: center;
-      margin-bottom: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 8px 0 0;
+      font-size: 1.1rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
     ul {
       list-style: none;
       padding: 0;
-      max-width: 600px;
-      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
     }
     li {
       background: white;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
+    }
+    li:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
     a {
       text-decoration: none;
-      font-size: 18px;
+      font-size: 1.1rem;
       color: #007acc;
       font-weight: bold;
     }
@@ -39,43 +61,49 @@
   </style>
 </head>
 <body>
-  <h1>My HTML & CSS Projects</h1>
-  <ul>
-    <li><a href="balancesheet.html">Balance Sheet</a></li>
-    <li><a href="build-a-book-catalog-table.html">Book Catalog Table</a></li>
-    <li><a href="build-a-book-inventory-app.html">Book Inventory App</a></li>
-    <li><a href="build-a-checkout-page.html">Checkout Page</a></li>
-    <li><a href="build-a-confidential-email-page.html">Confidential Email Page</a></li>
-    <li><a href="build-a-house-painting.html">House Painting</a></li>
-    <li><a href="build-a-moon-orbit.html">Moon Orbit</a></li>
-    <li><a href="build-an-availability-table.html">Availability Table</a></li>
-    <li><a href="build-an-event-flyer-page.html">Event Flyer</a></li>
-    <li><a href="build-a-newspaper-article.html">Newspaper Article</a></li>
-    <li><a href="build-a-page-of-playing-cards.html">Playing Cards</a></li>
-    <li><a href="build-a-personal-portfolio.html">Personal Portfolio</a></li>
-    <li><a href="build-a-product-landing-page.html">Product Landing Page</a></li>
-    <li><a href="build-a-stylized-to-do-list.html">Stylized To-Do List</a></li>
-    <li><a href="build-a-survey-form.html">Survey Form</a></li>
-    <li><a href="build-a-technical-documentation-page.html">Technical Documentation</a></li>
-    <li><a href="build-a-tribute-page.html">Tribute Page</a></li>
-    <li><a href="build-a-video-compilation-page.html">Video Compilation Page</a></li>
-    <li><a href="cat.html">Cat</a></li>
-    <li><a href="catpainting.html">Cat Painting</a></li>
-    <li><a href="city skyline.html">City Skyline</a></li>
-    <li><a href="design-a-business-card.html">Business Card</a></li>
-    <li><a href="design-a-contact-form.html">Contact Form</a></li>
-    <li><a href="design-a-magazine-layout.html">Magazine Layout</a></li>
-    <li><a href="design-a-movie-review-page.html">Movie Review Page</a></li>
-    <li><a href="flappypenguin.html">Flappy Penguin</a></li>
-    <li><a href="lab-blog-post-card.html">Blog Post Card</a></li>
-    <li><a href="lab-event-hub.html">Event Hub</a></li>
-    <li><a href="lab-job-application-form.html">Job Application Form</a></li>
-    <li><a href="lab-multimedia-player.html">Multimedia Player</a></li>
-    <li><a href="magzine.html">Magazine</a></li>
-    <li><a href="nutrition.html">Nutrition Page</a></li>
-    <li><a href="piano.html">Piano</a></li>
-    <li><a href="quiz webpage.html">Quiz Webpage</a></li>
-    <li><a href="set-of-colored-boxes.html">Set of Colored Boxes</a></li>
-  </ul>
+  <header>
+    <h1>My HTML & CSS Projects</h1>
+    <p>A collection of my practice projects built with HTML and CSS 🚀</p>
+  </header>
+
+  <main>
+    <ul>
+      <li><a href="balancesheet.html">Balance Sheet</a></li>
+      <li><a href="build-a-book-catalog-table.html">Book Catalog Table</a></li>
+      <li><a href="build-a-book-inventory-app.html">Book Inventory App</a></li>
+      <li><a href="build-a-checkout-page.html">Checkout Page</a></li>
+      <li><a href="build-a-confidential-email-page.html">Confidential Email Page</a></li>
+      <li><a href="build-a-house-painting.html">House Painting</a></li>
+      <li><a href="build-a-moon-orbit.html">Moon Orbit</a></li>
+      <li><a href="build-an-availability-table.html">Availability Table</a></li>
+      <li><a href="build-an-event-flyer-page.html">Event Flyer</a></li>
+      <li><a href="build-a-newspaper-article.html">Newspaper Article</a></li>
+      <li><a href="build-a-page-of-playing-cards.html">Playing Cards</a></li>
+      <li><a href="build-a-personal-portfolio.html">Personal Portfolio</a></li>
+      <li><a href="build-a-product-landing-page.html">Product Landing Page</a></li>
+      <li><a href="build-a-stylized-to-do-list.html">Stylized To-Do List</a></li>
+      <li><a href="build-a-survey-form.html">Survey Form</a></li>
+      <li><a href="build-a-technical-documentation-page.html">Technical Documentation</a></li>
+      <li><a href="build-a-tribute-page.html">Tribute Page</a></li>
+      <li><a href="build-a-video-compilation-page.html">Video Compilation Page</a></li>
+      <li><a href="cat.html">Cat</a></li>
+      <li><a href="catpainting.html">Cat Painting</a></li>
+      <li><a href="city skyline.html">City Skyline</a></li>
+      <li><a href="design-a-business-card.html">Business Card</a></li>
+      <li><a href="design-a-contact-form.html">Contact Form</a></li>
+      <li><a href="design-a-magazine-layout.html">Magazine Layout</a></li>
+      <li><a href="design-a-movie-review-page.html">Movie Review Page</a></li>
+      <li><a href="flappypenguin.html">Flappy Penguin</a></li>
+      <li><a href="lab-blog-post-card.html">Blog Post Card</a></li>
+      <li><a href="lab-event-hub.html">Event Hub</a></li>
+      <li><a href="lab-job-application-form.html">Job Application Form</a></li>
+      <li><a href="lab-multimedia-player.html">Multimedia Player</a></li>
+      <li><a href="magzine.html">Magazine</a></li>
+      <li><a href="nutrition.html">Nutrition Page</a></li>
+      <li><a href="piano.html">Piano</a></li>
+      <li><a href="quiz webpage.html">Quiz Webpage</a></li>
+      <li><a href="set-of-colored-boxes.html">Set of Colored Boxes</a></li>
+    </ul>
+  </main>
 </body>
 </html>
