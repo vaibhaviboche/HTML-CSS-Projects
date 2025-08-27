@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Colored Boxes</title>
+  <style>
+    /* #1 body background */
+    body {
+      background-color: #f4f4f4;
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    /* container grid */
+    .color-grid { /* #2 */
+      display: grid;
+      grid-template-columns: repeat(5, minmax(90px, 1fr));
+      gap: 16px;
+      width: min(900px, 92vw);
+      padding: 20px;
+    }
+
+    .color-box { /* #5 */
+      width: 140px;
+      height: 140px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,.08);
+      border: 1px solid rgba(0,0,0,.06);
+    }
+
+    /* specific color requirements */
+    .color1 { /* #6 hex value */
+      background-color: #ff6b6b;
+    }
+
+    .color2 { /* #7 rgb() value */
+      background-color: rgb(52, 211, 153);
+    }
+
+    .color3 { /* #8 predefined word color */
+      background-color: cornflowerblue;
+    }
+
+    .color4 { /* #9 hsl() value */
+      background-color: hsl(280, 80%, 65%);
+    }
+
+    .color5 { /* #10 any background color */
+      background-color: #f59e0b;
+    }
+
+    /* small screens: stack neatly */
+    @media (max-width: 720px) {
+      .color-grid {
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        justify-items: center;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .color-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+    }
+/* User story 1 */
+body {
+  background-color: #f4f4f4;
+}
+
+/* Container for color boxes */
+.color-grid {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+}
+
+/* User story 5: all color boxes have a size */
+.color-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+/* User story 2 and 4: colors for each box */
+/* Hexadecimal color */
+.color1 {
+  background-color: #3498db; /* nice blue */
+}
+
+/* RGB color */
+.color2 {
+  background-color: rgb(231, 76, 60); /* red */
+}
+
+/* Named color */
+.color3 {
+  background-color: gold;
+}
+
+/* HSL color */
+.color4 {
+  background-color: hsl(120, 60%, 50%); /* green */
+}
+
+/* Set background-color for the fifth box */
+.color5 {
+  background-color: #8e44ad; /* purple */
+}
+
+
+
+  </style>
+</head>
+<body>
+  <!-- #2 container with five boxes (#3) -->
+  <div class="color-grid">
+    <div class="color-box color1"></div> <!-- #4 -->
+    <div class="color-box color2"></div>
+    <div class="color-box color3"></div>
+    <div class="color-box color4"></div>
+    <div class="color-box color5"></div>
+  </div>
+</body>
+</html>
+

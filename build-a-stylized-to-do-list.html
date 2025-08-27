@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stylized To‑Do List</title>
+  <style>
+    :root {
+      --bg: #0f1221;
+      --card: #171a2b;
+      --ink: #e6e7ef;
+      --muted: #a5a8c2;
+      --link: #7dd3fc;
+      --link-visited: #c084fc;
+      --link-hover: #34d399;
+      --link-active: #f59e0b;
+      --focus: #f472b6;
+      --accent: #8b5cf6;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", "Noto Sans", Arial;
+      background: var(--bg);
+      color: var(--ink);
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+
+    .app {
+      width: min(720px, 95vw);
+      background: var(--card);
+      border-radius: 24px;
+      padding: 1.25rem;
+    }
+
+    .title {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    ul.todo-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 1rem;
+    }
+
+    ul.todo-list > li {
+      background: #1e2137;
+      border-radius: 12px;
+      padding: 1rem;
+    }
+
+    input[type="checkbox"] {
+      accent-color: var(--accent);
+      margin-right: .5rem;
+    }
+
+    label {
+      font-weight: 600;
+    }
+
+    ul.sub-item {
+      list-style: none;
+      padding: .25rem 0 0 2rem;
+      margin: 0;
+    }
+
+    a.sub-item-link {
+      text-decoration: none;
+      color: var(--link);
+      transition: color .2s;
+    }
+
+    a.sub-item-link:visited {
+      color: var(--link-visited);
+    }
+
+    a.sub-item-link:hover {
+      color: var(--link-hover);
+    }
+
+    a.sub-item-link:active {
+      color: var(--link-active);
+    }
+
+    a.sub-item-link:focus {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+    }
+/* ✅ No underline by default */
+.sub-item-link {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+/* ✅ Visited link color */
+.sub-item-link:visited {
+  color: #800080;
+}
+
+/* ✅ Hover color */
+.sub-item-link:hover {
+  color: #ff6600;
+}
+
+/* ✅ Active/clicked color */
+.sub-item-link:active {
+  color: #cc0000;
+}
+
+/* ✅ Focus outline */
+.sub-item-link:focus {
+  outline: 2px solid #00cc99;
+  outline-offset: 2px;
+}
+
+
+  </style>
+</head>
+<body>
+  <main class="app">
+    <h1 class="title">✨ My Stylized To‑Do</h1>
+
+    <ul class="todo-list">
+      <li>
+        <input type="checkbox" id="task-1" />
+        <label for="task-1">Write project outline</label>
+        <ul class="sub-item">
+          <li><a class="sub-item-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:hover" target="_blank">Read about :hover on MDN</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <input type="checkbox" id="task-2" />
+        <label for="task-2">Design color palette</label>
+        <ul class="sub-item">
+          <li><a class="sub-item-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:active" target="_blank">Review :active behavior</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <input type="checkbox" id="task-3" />
+        <label for="task-3">Implement focus states</label>
+        <ul class="sub-item">
+          <li><a class="sub-item-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:focus" target="_blank">Study :focus guidelines</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <input type="checkbox" id="task-4" />
+        <label for="task-4">Finalize link styles</label>
+        <ul class="sub-item">
+          <li><a class="sub-item-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/:visited" target="_blank">Confirm :visited rules</a></li>
+        </ul>
+      </li>
+    </ul>
+  </main>
+</body>
+</html>
+

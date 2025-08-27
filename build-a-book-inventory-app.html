@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+tr[class="read"]{
+  background-image: linear-gradient(silver, gold)
+}
+
+tr[class="to-read"]{
+  background-image: linear-gradient(to left, cyan, magenta)
+}
+
+tr[class="in-progress"]{
+  background-image: linear-gradient(to bottom left, lightgreen 40%, red)
+}
+
+span {
+  display: inline-block;
+}
+tr[class="to-read"] span[class="status"] {
+border: 2px dotted brown;
+background-image: linear-gradient(rgb(208, 0, 255), orange);
+}
+
+tr[class="read"] span[class="status"] {
+  border: 2px solid black;
+  background-image: linear-gradient(red, orange);
+}
+tr[class="in-progress"] span[class="status"] {
+  border: 2px solid black;
+  background-image: linear-gradient(yellow, red);
+}
+span[class^="rate"] > span{
+  border: 1px solid rgb(54, 210, 11);
+  border-radius: 10% 50%;
+  margin: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: blue;
+}
+
+span[class="status"], span[class^="rate"] {
+  height:10px;
+  width: 10px;
+  padding: 3px;
+}
+
+span[class~="one"] > span:first-of-type {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.551), rgb(62, 62, 51));
+}
+
+span[class~="two"] > span:nth-of-type(-n+2) {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.551), rgb(62, 62, 51));
+}
+
+span[class~="three"] > span {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.551), rgb(62, 62, 51));
+}
+
+</style>
+</head>
+
+<body>
+  <h1>Book Inventory</h1>
+  <table>
+    <thead>
+      <th>Title</th>
+      <th>Author</th>
+      <th>Category</th>
+      <th>Status</th>
+      <th>Rate</th>
+    </thead>
+    <tbody>
+      <tr class="read">
+        <td>Dune</td>
+        <td>Frank Herbert</td>
+        <td>Science Fiction</td>
+        <td><span class="status">Read</span></td>
+        <td><span class="rate three"><span></span><span></span><span></span></span></td>
+      </tr>
+      <tr class="read">
+        <td>Annals of the Former World</td>
+        <td>John McPhee</td>
+        <td>Non-fiction</td>
+        <td><span class="status">Read</span></td>
+        <td><span class="rate two"><span></span><span></span><span></span></span></td>
+      </tr>
+      <tr class="to-read">
+        <td>The Control of Nature</td>
+        <td>John McPhee</td>
+        <td>Non-fiction</td>
+        <td><span class="status">To Read</span></td>
+        <td><span class="rate one"><span></span><span></span><span></span></span></td>
+      </tr>
+      <tr class="in-progress">
+        <td>All the King's Men</td>
+        <td>Robert Penn Warren</td>
+        <td>Fiction</td>
+        <td><span class="status">In Progress</span></td>
+        <td><span class="rate"><span></span><span></span><span></span></span></td>
+      </tr>      
+    </tbody>
+  </table>
+</body>
+
+</html>
+
+

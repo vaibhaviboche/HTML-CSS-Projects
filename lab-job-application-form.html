@@ -1,0 +1,254 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Application Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container { /* #1 */
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    form { /* #2 */
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+
+    /* #19 :first-of-type input styling */
+    input:first-of-type {
+      border-radius: 12px;
+      background: #f9fafb;
+    }
+
+    /* #11 focus pseudo-class */
+    input:focus, textarea:focus {
+      border-color: #2563eb;
+      outline: none;
+    }
+
+    /* #12 invalid pseudo-class */
+    input:invalid, select:invalid, textarea:invalid {
+      border-color: red;
+    }
+
+    /* #13 valid pseudo-class */
+    input:valid, select:valid, textarea:valid {
+      border-color: green;
+    }
+
+    /* #14 button hover */
+    button:hover {
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+    }
+
+    .radio-group { /* #6 */
+      display: flex;
+      gap: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    .radio-group label {
+      font-weight: normal;
+    }
+
+    /* #15-#17 radio checked styling */
+    .radio-group input[type="radio"]:checked {
+      border: 2px solid #2563eb;
+      background-color: #dbeafe;
+      box-shadow: 0 0 5px rgba(37,99,235,0.6);
+    }
+
+    /* #18 change label text color when selected */
+    .radio-group input[type="radio"]:checked + label {
+      color: #2563eb;
+      font-weight: bold;
+    }
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  padding: 40px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* ✅ Requirement 19: Style first input */
+input:first-of-type {
+  border-radius: 20px;
+  background-color: #f0f8ff;
+}
+
+/* Input and field styles */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+/* ✅ Focus styles */
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* ✅ Validity styles */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+/* ✅ Radio group styling */
+.radio-group {
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.radio-group label {
+  margin-right: 20px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* ✅ :checked radio styles */
+.radio-group input[type="radio"]:checked {
+  border: 2px solid #007bff;
+  background-color: #e0f0ff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
+}
+
+/* ✅ Label changes color when radio is selected */
+.radio-group label:has(input[type="radio"]:checked) {
+  color: #007bff;
+  font-weight: bold;
+}
+/* Initial state of the button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* ✅ Hover state MUST change the background */
+button[type="submit"]:hover {
+  background-color: #0056b3; /* <-- Different from above */
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="container"> <!-- #1 -->
+    <form> <!-- #2 -->
+      <div>
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required> <!-- #3 + #9 -->
+      </div>
+
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required> <!-- #4 + #9 -->
+      </div>
+
+      <div>
+        <label for="position">Job Position</label>
+        <select id="position" name="position" required> <!-- #5 -->
+          <option value="" disabled selected>Select a position</option>
+          <option value="developer">Frontend Developer</option>
+          <option value="designer">UI/UX Designer</option>
+          <option value="manager">Project Manager</option>
+        </select>
+      </div>
+
+      <fieldset class="radio-group"> <!-- #6 -->
+        <legend>Availability</legend>
+        <div>
+          <input type="radio" id="fulltime" name="availability" value="fulltime"> <!-- #7 -->
+          <label for="fulltime">Full-Time</label>
+        </div>
+        <div>
+          <input type="radio" id="parttime" name="availability" value="parttime">
+          <label for="parttime">Part-Time</label>
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea> <!-- #8 -->
+      </div>
+
+      <button type="submit">Submit Application</button> <!-- #10 -->
+    </form>
+  </div>
+</body>
+</html>
+
+
+

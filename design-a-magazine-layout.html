@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magazine Layout</title>
+  <link rel="stylesheet" href="styles.css" />
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.magazine-cover {
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "small-article1 small-article2 cover-image";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr;
+  gap: 10px;
+  width: 90vw;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* Grid areas */
+.title {
+  grid-area: title;
+  background: #333;
+  color: white;
+  padding: 20px;
+  font-size: 2em;
+  text-align: center;
+}
+
+.feature-article {
+  grid-area: feature-article;
+  background: #d9eaf7;
+  padding: 15px;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+  background: #ffe5d9;
+  padding: 15px;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+  background: #e5ffd9;
+  padding: 15px;
+}
+
+.cover-image {
+  grid-area: cover-image;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+</style>
+</head>
+<body>
+  <main class="magazine-cover">
+    <header class="title">Tech & Trends Magazine</header>
+
+    <section class="feature-article">
+      <h2>Feature Article</h2>
+      <p>This is the big featured article of the magazine.</p>
+    </section>
+
+    <section class="small-article1">
+      <h3>Small Article 1</h3>
+      <p>Short write-up or teaser text goes here.</p>
+    </section>
+
+    <section class="small-article2">
+      <h3>Small Article 2</h3>
+      <p>Another short write-up or teaser text here.</p>
+    </section>
+
+    <section class="cover-image">
+      <img src="https://picsum.photos/300/400" alt="Magazine Cover" />
+    </section>
+  </main>
+</body>
+</html>
+

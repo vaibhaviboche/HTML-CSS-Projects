@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moon Orbit</title>
+  <link rel="stylesheet" href="styles.css" />
+<style>
+
+/* Center the entire layout */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at center, #000 60%, #111);
+}
+
+/* Space container */
+.space {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+/* Earth styling */
+.earth {
+  width: 100px;
+  height: 100px;
+  background-color: #2e86de;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px #2e86de;
+}
+
+/* Orbit container */
+.orbit {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbit 5s linear infinite;
+}
+
+/* Moon styling */
+.moon {
+  width: 30px;
+  height: 30px;
+  background-color: #f1c40f;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px #f1c40f;
+}
+
+/* Orbit animation */
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translate(-50%, -50%);
+  }
+  100% {
+    transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+
+</style>
+</head>
+<body>
+  <div class="space">
+    <div class="earth"></div>
+    <div class="orbit">
+      <div class="moon"></div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+

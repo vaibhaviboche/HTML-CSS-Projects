@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Flyer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 50px 0; /* #10 */
+      margin: 0 auto;  /* #11 + #12 */
+      width: 80vw;     /* #13 */
+      min-height: calc(100vh - 100px); /* #14 */
+      text-align: center;
+      background: #f9fafb;
+    }
+
+    header img { /* #2 */
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    header h1 { /* #3-#5 */
+      margin-top: 20px;
+      font-size: 2rem;
+      color: #1f2937;
+    }
+
+    main {
+      margin-top: 30px;
+    }
+
+    section { /* #7 + #17 */
+      width: 90%;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    section h2 { /* #8-#9 */
+      margin-bottom: 10px;
+      color: #2563eb;
+    }
+
+    hr { /* #15 + #16 */
+      width: 60%;
+      margin: 30px auto;
+      border: none;
+      border-top: 2px solid #e5e7eb;
+    }
+/* Requirements 10–14: Body styles */
+body {
+  padding: 50px 0;                         /* ✅ 10 */
+  margin: 0 auto;                          /* ✅ 11 & 12 */
+  width: 90vw;                             /* ✅ 13 */
+  min-height: calc(100vh - 100px);         /* ✅ 14 (100px = 50px top + 50px bottom padding) */
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+/* Header */
+header img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Section styling - ✅ 17 */
+section {
+  width: 80%;                              /* ✅ 17: percentage width */
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+/* hr styling - ✅ 16 */
+hr {
+  width: 60%;                              /* ✅ 16: percent width */
+  margin: 40px auto;
+  border: none;
+  border-top: 2px solid #ccc;
+}
+
+  </style>
+</head>
+<body>
+  <header> <!-- #1 -->
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/event.jpg" alt="Event banner"> <!-- #2 -->
+    <h1>Summer Music Festival 2025</h1> <!-- #3-#5 -->
+  </header>
+
+  <main> <!-- #6 -->
+    <section>
+      <h2>Live Performances</h2> <!-- #8-#9 -->
+      <p>Experience electrifying performances from world-renowned artists across multiple genres.</p>
+    </section>
+
+    <hr> <!-- #15 -->
+
+    <section>
+      <h2>Food & Drinks</h2> <!-- #8-#9 -->
+      <p>Enjoy a wide variety of delicious food trucks, local cuisine, and refreshing beverages.</p>
+    </section>
+  </main>
+</body>
+</html>
+
+
+
+

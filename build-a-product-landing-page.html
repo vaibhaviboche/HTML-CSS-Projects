@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowUp Skincare</title>
+  <link rel="stylesheet" href="styles.css" />
+<style>
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+}
+
+/* Header & Nav */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+}
+#header-img {
+  height: 50px;
+}
+#nav-bar {
+  display: flex;
+  gap: 1rem;
+}
+.nav-link {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+/* Sections */
+main {
+  padding-top: 100px;
+}
+section {
+  padding: 3rem 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+#video {
+  width: 100%;
+  height: 400px;
+  border-radius: 8px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#email {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+#submit {
+  padding: 0.7rem;
+  background: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #nav-bar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #video {
+    height: 200px;
+  }
+}
+
+
+</style>
+</head>
+<body>
+
+  <header id="header">
+    <img id="header-img" src="https://example.com/logo.png" alt="GlowUp Logo" />
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#video-section">Demo</a>
+      <a class="nav-link" href="#subscribe">Subscribe</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="features">
+      <h2>Why GlowUp?</h2>
+      <p>Gentle, effective skincare powered by nature and backed by science.</p>
+    </section>
+
+    <section id="video-section">
+      <h2>See It In Action</h2>
+      <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="subscribe">
+      <h2>Join Our Glow Tribe</h2>
+      <form id="form" action="https://www.freecodecamp.org/email-submit">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input type="submit" id="submit" value="Subscribe" />
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
+
+
+
+

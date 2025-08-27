@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Mastery Docs</title>
+  <link rel="stylesheet" href="styles.css" />
+<style>
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  display: flex;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #1e1e2f;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.nav-link {
+  display: block;
+  margin: 10px 0;
+  color: #a0d2eb;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#main-doc {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.main-section header {
+  font-size: 1.3em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+code {
+  display: block;
+  background-color: #f4f4f4;
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 4px solid #007acc;
+  font-family: monospace;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
+</style>
+</head>
+<body>
+  <nav id="navbar">
+    <header>CSS Mastery Documentation</header>
+    <a class="nav-link" href="#Selectors">Selectors</a>
+    <a class="nav-link" href="#Box_Model">Box Model</a>
+    <a class="nav-link" href="#Flexbox">Flexbox</a>
+    <a class="nav-link" href="#Grid_Layout">Grid Layout</a>
+    <a class="nav-link" href="#Media_Queries">Media Queries</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Selectors">
+      <header>Selectors</header>
+      <p>CSS selectors target HTML elements to apply styles.</p>
+      <p>They include universal, type, class, ID, and attribute selectors.</p>
+      <p>Advanced selectors like :nth-child and :not() offer precision.</p>
+      <p>Grouping selectors helps reduce repetition.</p>
+      <p>Combinators define relationships between elements.</p>
+      <code>p.intro { color: blue; }</code>
+      <code>div > p { margin: 10px; }</code>
+      <ul>
+        <li>Universal selector: *</li>
+        <li>Class selector: .class</li>
+        <li>ID selector: #id</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Box_Model">
+      <header>Box Model</header>
+      <p>Every HTML element is a box with content, padding, border, and margin.</p>
+      <p>Understanding the box model is key to layout control.</p>
+      <p>Padding adds space inside the border.</p>
+      <p>Margin adds space outside the border.</p>
+      <p>Border wraps the content and padding.</p>
+      <code>div { margin: 20px; padding: 10px; }</code>
+      <code>box-sizing: border-box;</code>
+      <ul>
+        <li>Content</li>
+        <li>Padding</li>
+        <li>Border</li>
+        <li>Margin</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Flexbox">
+      <header>Flexbox</header>
+      <p>Flexbox is a one-dimensional layout model.</p>
+      <p>It simplifies alignment and spacing of items.</p>
+      <p>Use `display: flex` to activate it.</p>
+      <p>Flex-direction controls row or column layout.</p>
+      <p>Justify-content and align-items manage spacing.</p>
+      <code>display: flex;</code>
+      <code>justify-content: space-between;</code>
+      <ul>
+        <li>Flex container</li>
+        <li>Flex items</li>
+        <li>Direction</li>
+        <li>Alignment</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Grid_Layout">
+      <header>Grid Layout</header>
+      <p>CSS Grid is a two-dimensional layout system.</p>
+      <p>It allows precise control over rows and columns.</p>
+      <p>Use `display: grid` to activate it.</p>
+      <p>Define grid-template-columns and rows.</p>
+      <p>Place items using grid-area or line numbers.</p>
+      <code>grid-template-columns: 1fr 2fr;</code>
+      <code>grid-row: 1 / 3;</code>
+      <ul>
+        <li>Grid container</li>
+        <li>Grid items</li>
+        <li>Template areas</li>
+        <li>Line-based placement</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Media_Queries">
+      <header>Media Queries</header>
+      <p>Media queries adapt styles to different screen sizes.</p>
+      <p>They use conditions like min-width or orientation.</p>
+      <p>Mobile-first design starts with base styles.</p>
+      <p>Enhancements are layered for larger screens.</p>
+      <p>Use logical operators like `and` to combine features.</p>
+      <code>@media (min-width: 768px) { ... }</code>
+      <code>@media (orientation: landscape) { ... }</code>
+      <ul>
+        <li>min-width</li>
+        <li>max-width</li>
+        <li>orientation</li>
+        <li>resolution</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
+
+
+
+

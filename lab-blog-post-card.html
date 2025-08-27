@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .blog-post-card { /* User Story #1 */
+      background: white; /* #9 */
+      border-radius: 12px; /* #8 */
+      width: 320px; /* #10 */
+      text-align: left; /* #11 */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .post-img { /* #2, #20, #21 */
+      width: 100%;
+      display: block;
+      border-bottom: 2px solid #e5e7eb;
+    }
+
+    .post-content { /* #3, #12 */
+      padding: 16px;
+    }
+
+    .post-title { /* #4, #22 */
+      color: #1f2937;
+      margin: 0 0 8px 0;
+      font-size: 1.25rem;
+    }
+
+    .post-excerpt { /* #5, #22 */
+      color: #4b5563;
+      margin: 0 0 12px 0;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .read-more { /* #6, #7, #14-#19 */
+      color: #ffffff;
+      background-color: #2563eb;
+      margin: 8px 0;
+      padding: 8px 14px;
+      border-radius: 6px;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.2s;
+    }
+
+    .read-more:hover { /* #13 */
+      background-color: #1e40af;
+    }
+
+/* Blog Post Card */
+.blog-post-card {
+  background-color: white; /* white background */
+  border-radius: 10px;     /* rounded corners */
+  width: 300px;            /* card width */
+  text-align: left;        /* text alignment */
+}
+
+/* Image */
+.post-img {
+  width: 100%;             /* fills card width */
+  border-bottom: 2px solid black; /* bottom border */
+}
+
+/* Post content */
+.post-content {
+  padding: 20px;           /* padding inside card */
+}
+
+/* Title */
+.post-title {
+  color: #333333;          /* non-default text color */
+  margin: 10px 0;          /* margins */
+}
+
+/* Excerpt */
+.post-excerpt {
+  color: #666666;          /* non-default text color */
+  margin: 10px 0;          /* margins */
+}
+
+/* Read More button */
+.read-more {
+  display: inline-block;   /* display property */
+  color: white;            /* text color */
+  background-color: #007BFF; /* background color */
+  margin: 10px 0;          /* margin */
+  padding: 10px 15px;      /* padding */
+  border-radius: 5px;      /* rounded corners */
+  text-decoration: none;   /* remove underline */
+}
+
+/* Hover effect */
+.read-more:hover {
+  background-color: #0056b3; /* hover background color */
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="blog-post-card"> <!-- #1 -->
+    <img class="post-img" src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg" alt="Cover photo of blog post"> <!-- #2 -->
+    <div class="post-content"> <!-- #3 -->
+      <h2 class="post-title">Designing with Simplicity</h2> <!-- #4 -->
+      <p class="post-excerpt">Explore the power of minimalist design in modern web development and how simplicity enhances user experience.</p> <!-- #5 -->
+      <a class="read-more" href="#">Read More</a> <!-- #6, #7 -->
+    </div>
+  </div>
+</body>
+</html>
+

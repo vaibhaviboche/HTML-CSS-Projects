@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  background-color: #ffffff; /* requirement */
+  border-radius: 10px;       /* requirement */
+  padding: 20px;             /* requirement */
+  width: 350px;              /* requirement */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;   /* margin requirement */
+  color: #333;          /* font color requirement */
+}
+
+input, textarea {
+  width: 100%;          /* requirement */
+  padding: 10px;        /* requirement */
+  margin-bottom: 15px;  /* requirement */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+button {
+  background-color: #0077cc; /* requirement */
+  color: #fff;
+  font-size: 16px;           /* requirement */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #005fa3; /* hover effect requirement */
+}
+
+</style>
+</head>
+<body>
+
+  <div class="form-container">
+    <form>
+      <h2>Contact Us</h2>
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
+

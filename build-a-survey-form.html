@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <!-- Page Title -->
+  <h1 id="title">Customer Feedback Survey</h1>
+
+  <!-- Description -->
+  <p id="description">We value your feedback! Please fill out this survey to help us improve our services.</p>
+
+  <!-- Survey Form -->
+  <form id="survey-form">
+
+    <!-- Name Field -->
+    <label id="name-label" for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+    <!-- Email Field -->
+    <label id="email-label" for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <!-- Number Field -->
+    <label id="number-label" for="number">Age:</label>
+    <input type="number" id="number" name="number" placeholder="Enter your age" min="1" max="120">
+
+    <!-- Dropdown Select -->
+    <label for="dropdown">Favorite Service:</label>
+    <select id="dropdown" name="dropdown">
+      <option value="room-service">Room Service</option>
+      <option value="cleaning">Cleaning</option>
+      <option value="food">Food Quality</option>
+      <option value="staff">Staff Friendliness</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <fieldset>
+      <legend>Would you recommend us?</legend>
+      <input type="radio" id="yes" name="recommend" value="yes">
+      <label for="yes">Yes</label>
+
+      <input type="radio" id="no" name="recommend" value="no">
+      <label for="no">No</label>
+    </fieldset>
+
+    <!-- Checkboxes -->
+    <fieldset>
+      <legend>Which of our services did you use? (Select all that apply)</legend>
+      <input type="checkbox" id="service-room" name="services" value="room-service">
+      <label for="service-room">Room Service</label>
+
+      <input type="checkbox" id="service-food" name="services" value="food">
+      <label for="service-food">Food</label>
+
+      <input type="checkbox" id="service-cleaning" name="services" value="cleaning">
+      <label for="service-cleaning">Cleaning</label>
+
+      <input type="checkbox" id="service-staff" name="services" value="staff">
+      <label for="service-staff">Staff</label>
+    </fieldset>
+
+    <!-- Comments Textarea -->
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" name="comments" rows="5" cols="40" placeholder="Enter your comments here"></textarea>
+
+    <!-- Submit Button -->
+    <button type="submit" id="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
+
+

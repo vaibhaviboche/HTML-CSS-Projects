@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Confidential Email</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+
+#email {
+  padding: 50px;
+  margin-top: 50px;
+  width: 500px;
+  border: 2px solid #333;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+#confidential,
+#top-secret {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: 2px dashed crimson;
+  background-color: #ffe6e6;
+  font-weight: bold;
+  transform: rotate(-2deg);
+}
+
+#top-secret {
+  border-color: navy;
+  background-color: #e6f0ff;
+  transform: rotate(1.5deg);
+}
+
+.blurred {
+  filter: blur(3px);
+  background-color: #ddd;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+
+
+</style>
+</head>
+<body>
+  <main id="email">
+    <div id="confidential">CONFIDENTIAL</div>
+    <div id="top-secret">TOP SECRET</div>
+
+    <p>This message contains <span class="blurred">sensitive data</span> that should not be shared.</p>
+    <p>Only authorized personnel may access <span class="blurred">project details</span> and internal notes.</p>
+    <p>Violation of protocol may result in <span class="blurred">disciplinary action</span>.</p>
+  </main>
+</body>
+</html>
+
+
