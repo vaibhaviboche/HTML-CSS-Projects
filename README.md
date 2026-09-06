@@ -1,37 +1,33 @@
 # HTML & CSS Projects
 
-A collection of frontend projects developed using **HTML5 and CSS3** to strengthen my understanding of web development, responsive design, layouts, and user interface development.
+A collection of frontend projects developed using HTML5 and CSS3 to practice and improve web development, responsive design, layouts, and user interface development.
 
-This repository contains a variety of practical projects, webpage designs, UI components, forms, creative layouts, and frontend exercises.
+This repository contains a variety of webpages, UI components, forms, creative designs, and practical frontend exercises.
 
 ---
 
 ## 📌 About This Repository
 
-This repository represents my hands-on practice with the core technologies used in frontend development.
+This repository represents my hands-on practice with the fundamentals of frontend web development.
 
-The projects focus on building webpages from scratch and applying concepts such as:
+The projects focus on creating webpages from scratch and applying concepts such as:
 
 - Semantic HTML
 - CSS styling
-- Responsive layouts
+- Responsive web design
 - Flexbox
 - CSS Grid
 - Forms and tables
-- Positioning
+- Positioning and layouts
 - UI components
 - CSS animations
-- Page layouts and visual design
-
-Each project helped me practice a specific frontend concept and improve my ability to structure and style web pages.
+- Visual design
 
 ---
 
-## 📂 Project Categories
+## 📂 Projects Overview
 
 ### 🌐 Web Pages & Layouts
-
-Projects focused on creating complete webpage layouts and responsive designs.
 
 - Personal Portfolio
 - Landing Pages
@@ -44,11 +40,7 @@ Projects focused on creating complete webpage layouts and responsive designs.
 - Event Pages
 - Media Pages
 
----
-
 ### 🎨 UI Components & Designs
-
-Projects focused on creating reusable and visually structured interface elements.
 
 - Navigation Menus
 - Cards
@@ -60,11 +52,7 @@ Projects focused on creating reusable and visually structured interface elements
 - Product Cards
 - UI Layouts
 
----
-
 ### 📝 Forms & User Interfaces
-
-Projects designed to practice HTML forms and structured user input interfaces.
 
 - Survey Forms
 - Contact Forms
@@ -73,66 +61,52 @@ Projects designed to practice HTML forms and structured user input interfaces.
 - Registration Forms
 - Data Tables
 
----
-
 ### 🧩 Creative CSS Projects
 
-Projects created to practice CSS positioning, shapes, layouts, and visual effects.
-
-- CSS Illustrations
-- Creative Layouts
 - Business Cards
 - Playing Cards
 - Piano
 - City Skyline
 - House Illustration
 - Character Illustrations
+- Creative Layouts
+- CSS-based Visual Designs
 - Animated Components
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Webpage structure and semantic markup |
-| CSS3 | Styling and visual design |
-| Flexbox | One-dimensional layouts |
-| CSS Grid | Two-dimensional layouts |
-| Responsive Design | Mobile and desktop layouts |
-| CSS Animations | Visual effects and interactions |
+- HTML5
+- CSS3
+- Flexbox
+- CSS Grid
+- Responsive Web Design
+- CSS Animations
 
 ---
 
 ## 🎯 Concepts Practiced
 
-Through these projects, I have practiced:
-
 - HTML document structure
-- Semantic HTML elements
-- Headings, paragraphs and lists
-- Links and navigation
-- Images and multimedia
-- Forms and input elements
-- Tables
+- Semantic HTML
 - CSS selectors
 - Colors and typography
 - Box model
 - Margins and padding
 - Borders and shadows
-- Positioning
+- CSS positioning
 - Flexbox
 - CSS Grid
 - Responsive layouts
 - Media queries
 - CSS animations
+- Forms and tables
 - UI design fundamentals
 
 ---
 
 ## 📁 Repository Structure
-
-The repository contains multiple independent projects.
 
 ```text
 HTML-CSS-Projects/
